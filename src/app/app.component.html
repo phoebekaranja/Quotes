@@ -5,6 +5,10 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <h1>My Goals</h1>
+<ul>
+  <li *ngFor='let quote of quotes'>{{quote}}</li>
+</ul>
    <div *ngFor="let quote of quotes"> 
      <p>{{quote.title}}</p><br>
      <p>{{quote.author}}</p>
