@@ -9,6 +9,6 @@ import {Quoteclass } from './quoteclass'
 export class AppComponent {
 public  title = 'quotes';
   quotes=[
-    new Quoteclass(1, 'this ','desvtoof')
+    new Quoteclass(1, 'JamesGichuru ','desvtoof')
   ]
 }

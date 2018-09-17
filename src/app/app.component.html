@@ -1,5 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h1> My quotes </h1>
+<hr>
 <p> My quote for today is {{quotes}} </p>
 <div style="text-align:center">
   <h1>
@@ -9,6 +10,7 @@
 <ul>
   <li *ngFor='let quote of quotes'>{{quote}}</li>
 </ul>
+<p *ngIf='quotes.length > 5'>You have too many quotes </p>
    <div *ngFor="let quote of quotes"> 
      <p>{{quote.title}}</p><br>
      <p>{{quote.author}}</p>
