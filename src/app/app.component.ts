@@ -10,6 +10,5 @@ export class AppComponent {
 public  title = 'quotes';
   quotes=[
     new Quoteclass(1, 'JamesGichuru ','desvtoof')
-    new eventemi
   ]
 }
