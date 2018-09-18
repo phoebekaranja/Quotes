@@ -1,18 +1,20 @@
 <p>
   quotes works!
 </p>
-<p>{{quotes .title}}</p>
+<!-- <p>{{quote.title}}</p> -->
+<button (click) = 'toogleDetails(true)'> Complete </button>
+
 <h1>My quotes</h1>
 <hr>
 <ul>
-  <p>{{quotes.id}}</p>
-    <h2>My Number</h2>
-        <li >{{quotesid}}</li>
     <div *ngFor='let quote of quotes;let i = index'>
+        <li >{{quote.title}}</li>
+    <h2>My Number</h2>
+        <li >{{quote.id}}</li>
         <li >{{quote.author}}</li>
         <button  (click)='toogleDetails(i)'>Toogle Details</button>
 
-        <app-quotes-details *ngIf="quotes.showDescription" {[Quotes]} ='quotes'></app-quotes-details>
+        <app-quotes-details *ngIf="quote.showDescription" {[Quotes]} ='quotes'></app-quotes-details>
     </div>
 </ul>
   <p *ngIf='quotes.length > 5'>You have too many quotes</p>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Quoteclass} from '../quoteclass';
+import {Quote} from '../quote';
 
 @Component({
   selector: 'app-quotes',
@@ -8,8 +8,14 @@ import {Quoteclass} from '../quoteclass';
 })
 export class QuotesComponent implements OnInit {
     quotes = [
-      new Quoteclass(1, 'River ','JamesGichuru') 
+      new Quote(1,"river","jamses"),
+       
     ]
+
+    toogleDetails(index){
+      this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
   constructor() { }
 
   ngOnInit() {
