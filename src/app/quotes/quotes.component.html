@@ -1,11 +1,13 @@
 <p>
   quotes works!
 </p>
-<p>{{quotes.title}}</p>
+<p>{{quotes .title}}</p>
 <h1>My quotes</h1>
 <hr>
 <ul>
-        <li >{{quote.id}}</li>
+  <p>{{quotes.id}}</p>
+    <h2>My Number</h2>
+        <li >{{quotesid}}</li>
     <div *ngFor='let quote of quotes;let i = index'>
         <li >{{quote.author}}</li>
         <button  (click)='toogleDetails(i)'>Toogle Details</button>

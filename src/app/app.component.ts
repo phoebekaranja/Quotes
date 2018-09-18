@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Quoteclass } from './quoteclass'
+import {Quoteclass } from './quoteclass';
 
 @Component({
   selector: 'app-root',
